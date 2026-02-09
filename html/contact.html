@@ -15,51 +15,45 @@
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
     </head>
 
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-</head>
-
-<body>
-    <h1 class="text-6xl font-bold text-white 
-           [text-shadow:_1px_1px_0_rgb(0_0_0),_-1px_-1px_0_rgb(0_0_0),_1px_-1px_0_rgb(0_0_0),_-1px_1px_0_rgb(0_0_0)] 
-           hover:[text-shadow:_4px_4px_0_rgb(0_0_0)] 
-           transition-all duration-300">
-
-    </h1>
-    <nav class="sticky top-0 z-20">
-        <div class="font-sans w-full m-0">
-            <div class="bg-[#FDFFFC] shadow">
-                <div class="container mx-auto px-4">
-                    <div class="flex items-center justify-between py-4">
-                        <div class="w-11">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"
-                                fill="black" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
-                                <path
-                                    d="M476.335 35.664v.001c47.554 47.552 47.552 125.365.002 172.918l-101.729 101.73c-60.027 60.025-162.073 42.413-194.762-32.45 35.888-31.191 53.387-21.102 87.58-6.638 20.128 8.512 43.74 3.955 60.08-12.387l99.375-99.371c21.49-21.493 21.492-56.662 0-78.155-21.489-21.488-56.677-21.472-78.151 0l-71.278 71.28c-23.583-11.337-50.118-14.697-75.453-10.07a121.476 121.476 0 0118.767-24.207l82.651-82.65c47.554-47.551 125.365-47.555 172.918-.001zM35.664 476.334l.001.001c47.554 47.552 125.365 47.552 172.917 0l85.682-85.682a121.496 121.496 0 0019.325-25.157c-27.876 6.951-57.764 4.015-83.932-8.805l-70.192 70.19c-21.472 21.471-56.658 21.492-78.149 0-21.492-21.491-21.493-56.658 0-78.149l99.375-99.376c20.363-20.363 61.002-26.435 91.717 1.688 29.729-3.133 41.275-8.812 59.742-26.493-39.398-69.476-137.607-80.013-194.757-22.863L35.664 303.417c-47.552 47.553-47.552 125.364 0 172.917z" />
-                            </svg>
-                        </div>
+    <body>
+        <nav class="sticky top-0">
+            <div class="font-sans w-full m-0">
+                <div class="bg-[#FDFFFC] shadow">
+                    <div class="container mx-auto px-4">
+                        <div class="flex items-center justify-between py-4">
+                            <div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-10 h-10 text-purple-600"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M14.5,16 C14.2238576,16 14,15.7761424 14,15.5 L14,9.5 C14,9.22385763 14.2238576,9 14.5,9 L16,9 C17.1045695,9 18,9.8954305 18,11 C18,11.4116588 17.8756286,11.7942691 17.6624114,12.1123052 C18.4414283,12.3856578 19,13.1275982 19,14 C19,15.1045695 18.1045695,16 17,16 L14.5,16 Z M15,15 L17,15 C17.5522847,15 18,14.5522847 18,14 C18,13.4477153 17.5522847,13 17,13 L15,13 L15,15 Z M15,12 L16,12 C16.5522847,12 17,11.5522847 17,11 C17,10.4477153 16.5522847,10 16,10 L15,10 L15,12 Z M12.9499909,4 L19.5,4 C20.8807119,4 22,5.11928813 22,6.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L13.5,22 C12.2700325,22 11.2475211,21.1117749 11.0389093,19.9417682 C10.8653433,19.9799013 10.6850188,20 10.5,20 L4.5,20 C3.11928813,20 2,18.8807119 2,17.5 L2,4.5 C2,3.11928813 3.11928813,2 4.5,2 L10.5,2 C11.709479,2 12.7183558,2.85887984 12.9499909,4 Z M13,5 L13,17.5 C13,18.3179089 12.6072234,19.0440799 12,19.5001831 C12.0000989,20.3285261 12.6716339,21 13.5,21 L19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,6.5 C21,5.67157288 20.3284271,5 19.5,5 L13,5 Z M8.56005566,11.4964303 C8.54036595,11.4987873 8.52032459,11.5 8.5,11.5 L6.5,11.5 C6.47967541,11.5 6.45963405,11.4987873 6.43994434,11.4964303 L5.96423835,12.6856953 C5.86168164,12.9420871 5.57069642,13.066795 5.31430466,12.9642383 C5.0579129,12.8616816 4.93320495,12.5706964 5.03576165,12.3143047 L7.03576165,7.31430466 C7.20339081,6.89523178 7.79660919,6.89523178 7.96423835,7.31430466 L9.96423835,12.3143047 C10.066795,12.5706964 9.9420871,12.8616816 9.68569534,12.9642383 C9.42930358,13.066795 9.13831836,12.9420871 9.03576165,12.6856953 L8.56005566,11.4964303 Z M8.16148352,10.5 L7.5,8.8462912 L6.83851648,10.5 L8.16148352,10.5 Z M10.5,3 L4.5,3 C3.67157288,3 3,3.67157288 3,4.5 L3,17.5 C3,18.3284271 3.67157288,19 4.5,19 L10.5,19 C11.3284271,19 12,18.3284271 12,17.5 L12,4.5 C12,3.67157288 11.3284271,3 10.5,3 Z M6.5,18 C6.22385763,18 6,17.7761424 6,17.5 C6,17.2238576 6.22385763,17 6.5,17 L8.5,17 C8.77614237,17 9,17.2238576 9,17.5 C9,17.7761424 8.77614237,18 8.5,18 L6.5,18 Z M15.5,20 C15.2238576,20 15,19.7761424 15,19.5 C15,19.2238576 15.2238576,19 15.5,19 L17.5,19 C17.7761424,19 18,19.2238576 18,19.5 C18,19.7761424 17.7761424,20 17.5,20 L15.5,20 Z"
+                                    />
+                                </svg>
+                            </div>
 
                             <div class="hidden sm:flex sm:items-center">
                                 <a
-                                    href="#"
+                                    href="index.html"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Products</a
+                                    >Home</a
                                 >
                                 <a
                                     href="#"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Marketplace</a
+                                    >Activiteiten</a
                                 >
                                 <a
                                     href="#"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Partners</a
+                                    >Over ons</a
                                 >
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300"
-                                    >Pricing</a
+                                    >Contact</a
                                 >
                             </div>
 
@@ -111,75 +105,130 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <section class="relative overflow-hidden group">
-        <div class="absolute inset-0 bg-[url(../images/landscape.jpg)] bg-cover bg-center blur-[2px] scale-110"></div>
+        </nav>
+        <section class="min-h-screen flex items-center justify-center py-12 px-4 bg-[#FDFFFC]">
+            <div class="max-w-6xl w-full grid md:grid-cols-2 gap-8">
+                <!-- Contact Formulier -->
+                <div class="bg-white rounded-lg shadow-2xl p-8">
+                    <h2 class="text-3xl font-bold text-[#101935] mb-2">Neem contact op</h2>
+                    <p class="text-[#888098] mb-6">
+                        Vul het formulier in en we nemen zo snel mogelijk contact met je op.
+                    </p>
 
-        <div class="absolute inset-0 bg-black/40 z-0 transition-all duration-300 group-hover:bg-black/50"></div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="naam">Naam</label>
+                            <input
+                                type="text"
+                                id="naam"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="Jouw naam"
+                            />
+                        </div>
 
-        <div class="relative flex flex-col text-center gap-6 items-center py-48 px-4 z-10">
-            <h1 class="text-5xl sm:text-7xl font-bold text-white drop-shadow-lg animate-fade-in-up">
-                De Schakel
-            </h1>
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="jouw@email.nl"
+                            />
+                        </div>
 
-            <p
-                class="font-medium text-white/90 text-center max-w-[600px] drop-shadow-md animate-fade-in-up delay-200 opacity-0">
-                Hier staat text. Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Iusto, nisi necessitatibus iste praesentium
-                suscipit neque iure vel.
-            </p>
-        </div>
-    </section>
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="bericht">Bericht</label>
+                            <textarea
+                                id="bericht"
+                                rows="4"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="Jouw bericht..."
+                            ></textarea>
+                        </div>
 
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
+                        <button
+                            type="submit"
+                            class="w-full bg-[#266DD3] text-white font-medium py-3 rounded-lg hover:bg-[#101935] transition duration-300"
+                        >
+                            Verstuur bericht
+                        </button>
+                    </form>
+                </div>
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+                <div class="bg-white rounded-lg shadow-2xl p-8">
+                    <h2 class="text-3xl font-bold text-[#101935] mb-6">Onze informatie</h2>
 
-        .animate-fade-in-up {
-            animation: fadeInUp 1.2s ease-out forwards;
-        }
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#101935] mb-2">Adres</h3>
+                            <p class="text-[#888098]">
+                                <a
+                                    href="https://www.google.com/maps/place/p.a,+W.A.+Scholtenweg+34,+9636+BS+Zuidbroek/@53.1614737,6.8560082,17z/data=!3m1!4b1!4m6!3m5!1s0x47b7d4eff975d811:0x39a61ead0e85c815!8m2!3d53.1614705!4d6.8585885!16s%2Fg%2F11crxcd7vz?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                />
+                                p/a W.A. Scholtenweg 34 <br />
+                                9636 BS Zuidbroek<br />
+                                Nederland
+                            </p>
+                        </div>
 
-        .delay-200 {
-            animation-delay: 0.4s;
-        }
-    </style>
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#101935] mb-2">Contact</h3>
+                            <p class="mr-1 text-[#888098]">Telefoonnummer:</p>
+                            <a
+                                href="tel:+31(0)630635076"
+                                aria-label="Our phone"
+                                title="Our phone"
+                                class="transition-colors duration-300 text-[#888098] hover:text-black"
+                                >+31(0)630635076</a
+                            >
 
-    <footer class="bg-[#101935]">
-        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="sm:col-span-2">
-                    <a href="https://www.schrijvershoekzuidbroek.nl/" aria-label="Go home" title="Company"
-                        class="inline-flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"
-                            fill="white" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
-                            <path
-                                d="M476.335 35.664v.001c47.554 47.552 47.552 125.365.002 172.918l-101.729 101.73c-60.027 60.025-162.073 42.413-194.762-32.45 35.888-31.191 53.387-21.102 87.58-6.638 20.128 8.512 43.74 3.955 60.08-12.387l99.375-99.371c21.49-21.493 21.492-56.662 0-78.155-21.489-21.488-56.677-21.472-78.151 0l-71.278 71.28c-23.583-11.337-50.118-14.697-75.453-10.07a121.476 121.476 0 0118.767-24.207l82.651-82.65c47.554-47.551 125.365-47.555 172.918-.001zM35.664 476.334l.001.001c47.554 47.552 125.365 47.552 172.917 0l85.682-85.682a121.496 121.496 0 0019.325-25.157c-27.876 6.951-57.764 4.015-83.932-8.805l-70.192 70.19c-21.472 21.471-56.658 21.492-78.149 0-21.492-21.491-21.493-56.658 0-78.149l99.375-99.376c20.363-20.363 61.002-26.435 91.717 1.688 29.729-3.133 41.275-8.812 59.742-26.493-39.398-69.476-137.607-80.013-194.757-22.863L35.664 303.417c-47.552 47.553-47.552 125.364 0 172.917z" />
-                        </svg>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase">De Schakel
-                            Dorpsvereniging</span>
-                    </a>
-                    <div class="mt-6 lg:max-w-sm">
-                        <p class="text-sm text-white">***</p>
-                        <p class="mt-4 text-sm text-white">***</p>
+                            <p class="mr-1 text-[#888098]">E-Mail Adres:</p>
+                            <a
+                                href="mailto:okkotenhof@hessing.eu"
+                                aria-label="Our E-mail"
+                                title="Our E-mail"
+                                class="transition-colors duration-300 text-[#888098] hover:text-black"
+                                >okkotenhof@hessing.eu</a
+                            >
+                        </div>
                     </div>
                 </div>
-                <div class="space-y-2 text-sm">
-                    <p class="text-base font-bold tracking-wide text-white">Contact</p>
-                    <div class="flex">
-                        <p class="mr-1 text-white">Telefoonnummer:</p>
-                        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
-                            class="transition-colors duration-300 text-white hover:text-gray-400">+31(0)630635076</a>
+            </div>
+        </section>
+        <footer class="bg-[#101935]">
+            <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="sm:col-span-2">
+                        <a
+                            href="https://www.schrijvershoekzuidbroek.nl/"
+                            aria-label="Go home"
+                            title="Company"
+                            class="inline-flex items-center"
+                        >
+                            <svg
+                                class="w-8 text-white"
+                                viewBox="0 0 24 24"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-miterlimit="10"
+                                stroke="currentColor"
+                                fill="none"
+                            >
+                                <rect x="3" y="1" width="7" height="12"></rect>
+                                <rect x="3" y="17" width="7" height="6"></rect>
+                                <rect x="14" y="1" width="7" height="6"></rect>
+                                <rect x="14" y="11" width="7" height="12"></rect>
+                            </svg>
+                            <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase"
+                                >Schrijvershoek</span
+                            >
+                        </a>
+                        <div class="mt-6 lg:max-w-sm">
+                            <p class="text-sm text-white">***</p>
+                            <p class="mt-4 text-sm text-white">***</p>
+                        </div>
                     </div>
                     <div class="space-y-2 text-sm">
                         <p class="text-base font-bold tracking-wide text-white">Contact</p>
