@@ -36,24 +36,24 @@
 
                             <div class="hidden sm:flex sm:items-center">
                                 <a
-                                    href="#"
+                                    href="index.html"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Products</a
+                                    >Home</a
                                 >
                                 <a
                                     href="#"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Marketplace</a
+                                    >Activiteiten</a
                                 >
                                 <a
                                     href="#"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300 mr-4"
-                                    >Partners</a
+                                    >Over ons</a
                                 >
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="text-black text-sm font-semibold hover:text-[#266DD3] hover:scale-125 transition duration-300"
-                                    >Pricing</a
+                                    >Contact</a
                                 >
                             </div>
 
@@ -106,15 +106,95 @@
                 </div>
             </div>
         </nav>
-        <section
-            class="bg-[url(../images/landscape.jpg)] flex flex-col text-center gap-4 items-center py-48 px-4 gap-4"
-        >
-            <h1 class="text-5xl sm:text-7xl font-bold text-[#101935] text-nowrap">De Schakel</h1>
-            <p class="font-semibold text-center max-w-[600px]">
-                Hier staat text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, nisi necessitatibus
-                iste praesentium suscipit neque iure vel, doloribus aut ducimus nemo at magni, dicta cum sint quas
-                blanditiis cupiditate similique?
-            </p>
+        <section class="min-h-screen flex items-center justify-center py-12 px-4 bg-[#FDFFFC]">
+            <div class="max-w-6xl w-full grid md:grid-cols-2 gap-8">
+                <!-- Contact Formulier -->
+                <div class="bg-white rounded-lg shadow-2xl p-8">
+                    <h2 class="text-3xl font-bold text-[#101935] mb-2">Neem contact op</h2>
+                    <p class="text-[#888098] mb-6">
+                        Vul het formulier in en we nemen zo snel mogelijk contact met je op.
+                    </p>
+
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="naam">Naam</label>
+                            <input
+                                type="text"
+                                id="naam"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="Jouw naam"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="jouw@email.nl"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block text-[#101935] font-medium mb-2" for="bericht">Bericht</label>
+                            <textarea
+                                id="bericht"
+                                rows="4"
+                                class="w-full px-4 py-2 border-2 border-[#888098] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#266DD3] focus:border-transparent"
+                                placeholder="Jouw bericht..."
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-[#266DD3] text-white font-medium py-3 rounded-lg hover:bg-[#101935] transition duration-300"
+                        >
+                            Verstuur bericht
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-2xl p-8">
+                    <h2 class="text-3xl font-bold text-[#101935] mb-6">Onze informatie</h2>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#101935] mb-2">Adres</h3>
+                            <p class="text-[#888098]">
+                                <a
+                                    href="https://www.google.com/maps/place/p.a,+W.A.+Scholtenweg+34,+9636+BS+Zuidbroek/@53.1614737,6.8560082,17z/data=!3m1!4b1!4m6!3m5!1s0x47b7d4eff975d811:0x39a61ead0e85c815!8m2!3d53.1614705!4d6.8585885!16s%2Fg%2F11crxcd7vz?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                />
+                                p/a W.A. Scholtenweg 34 <br />
+                                9636 BS Zuidbroek<br />
+                                Nederland
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#101935] mb-2">Contact</h3>
+                            <p class="mr-1 text-[#888098]">Telefoonnummer:</p>
+                            <a
+                                href="tel:+31(0)630635076"
+                                aria-label="Our phone"
+                                title="Our phone"
+                                class="transition-colors duration-300 text-[#888098] hover:text-black"
+                                >+31(0)630635076</a
+                            >
+
+                            <p class="mr-1 text-[#888098]">E-Mail Adres:</p>
+                            <a
+                                href="mailto:okkotenhof@hessing.eu"
+                                aria-label="Our E-mail"
+                                title="Our E-mail"
+                                class="transition-colors duration-300 text-[#888098] hover:text-black"
+                                >okkotenhof@hessing.eu</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="bg-[#101935]">
             <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
