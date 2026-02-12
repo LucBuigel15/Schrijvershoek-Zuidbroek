@@ -1,0 +1,109 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 1.34s;
+}
+
+#infoBlocks {
+  scroll-margin-top: 69px;
+}
+
+@layer base {
+  html {
+    font-family: "Merriweather", serif;
+  }
+}
+
+/* Animation Container */
+.anim-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* "De" - The static fading word */
+.anim-first {
+  animation: showup 2s forwards;
+}
+
+/* "Schakel" - The sliding reveal wrapper */
+.anim-second {
+  width: 0px;
+  overflow: hidden;
+  animation: reveal 4s forwards;
+}
+
+/* "Schakel" - The actual text sliding in */
+.anim-second span {
+  margin-left: -8ch; /* Starts hidden to the left */
+  animation: slidein 4s forwards;
+  display: inline-block;
+}
+
+/* Keyframes */
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -8ch;
+  }
+  20% {
+    margin-left: -8ch;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: fit-content;
+  } /* Approx width of 'Schakel' + padding */
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: fit-content;
+  }
+}
